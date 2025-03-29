@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are you a human?</title>
+    <link rel="stylesheet" href="captcha2.css">
+</head>
+<body>
+
+    <div id="quiz-container">
+
+        <form id="quiz-form">
+            <div class="question-container">
+                <!-- Existing quiz questions here -->
+
+                <!-- Add the 3x3 Grid of Images with the happyMonkey on top -->
+                <div id="image-grid-container">
+                    <!-- The main monkey image placed on top -->
+                    <img src="apple.png" alt="Happy Monkey" id="main-monkey-image">
+
+                    <!-- 3x3 Grid of other images below the main monkey image -->
+                    <div class="image-grid">
+                        <img src="apple1.png" alt="Happy Monkey 1" class="monkey-image">
+                        <img src="apple2.png" alt="Happy Monkey 2" class="monkey-image">
+                        <img src="apple3.png" alt="Happy Monkey 3" class="monkey-image">
+                        <img src="apple4.png" alt="Happy Monkey 4" class="monkey-image">
+                        <img src="apple5.png" alt="Happy Monkey 5" class="monkey-image">
+                        <img src="apple6.png" alt="Happy Monkey 6" class="monkey-image">
+                        <img src="apple7.png" alt="Happy Monkey 7" class="monkey-image">
+                        <img src="apple8.png" alt="Happy Monkey 8" class="monkey-image">
+                        <img src="apple8.png" alt="Happy Monkey 9" class="monkey-image">
+                    </div>
+                    <!--<button type="button" id="verify-button" class="verify-button" disabled>VERIFY</button>-->
+
+                    <div id="verify-container">
+                        <img class="verify" src="verify.png" id="verify">
+                        <a href="captcha3.html">
+                        <button type="button" id="verify-button" class="verify-button" disabled>VERIFY</button>
+                        </a>
+                    </div>
+                    <!--<img class="verify" src="verify.png" id="verify">-->
+
+                </div>
+
+            </div>
+       <!--     <button type="button" id="verify-button" class="verify-button" disabled>VERIFY</button>-->
+
+        </form>
+    </div>
+
+    <script src="captcha2.js"></script>
+</body>
+</html>

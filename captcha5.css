@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#quiz-container {
+    position: absolute;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+
+.question {
+    margin-bottom: 5%;
+}
+
+button:hover {
+    background-color: #2a74c8;
+}
+
+#result {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.logo{
+    width: 10%;
+    margin-left: 45%;
+}
+
+
+/* Style the main monkey image placed on top */
+#main-monkey-image {
+    width: 100%; /* Size the image */
+    height: auto;
+    margin-bottom: 1%; /* Space between main image and grid */
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 15px; /* Increased space between the images */
+    justify-items: center; /* Center images in each grid cell */
+    padding: 10px; /* Add padding around the grid */
+}
+
+/* Style for each image in the grid */
+.monkey-image {
+    width: 100px; /* Fixed width for each image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Rounded corners for the images */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Optional: add hover effect for images */
+.monkey-image:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
+
+#verify{
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 0%;
+}
+
+/* Existing CSS */
+
+.monkey-image {
+    width: 100px; /* Fixed width for each image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Rounded corners for the images */
+    transition: transform 0.3s ease, border 0.3s ease; /* Smooth transition for hover and border */
+    object-fit: cover; /* Ensures the image fills the grid cell evenly */
+}
+
+/* Style for the selected image */
+.selected {
+    transform: scale(1.1); /* Maintain the scaled effect */
+    border: 3px solid #4990e2; /* Blue border for the selected image */
+}
+
+/* Optional: add hover effect for images */
+.monkey-image:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+.verify-button {
+    position: absolute; /* Position the button on top of the grid */
+    top: 86.4%; /* Position it towards the top */
+    left: 79%; /* Center it horizontally */
+    transform: translateX(-50%); /* Ensure exact centering */
+    padding: 16px 30px;
+    font-size: 14px;
+    background-color: #4990e2;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: not-allowed; /* Initially disable the button */
+    opacity: 0.6;
+}
+.verify-button.enabled {
+    cursor: pointer;
+    opacity: 1;
+    background-color: #4990e2; /* Change color when enabled */
+}
+.verify-button.enabled:hover {
+    background-color: #2a74c8; /* Darker green on hover */
+}
+
+#verify-container {
+    text-align: center; /* Center the button and image below the grid */
+    margin-top: -1%; /* Space between the image grid and the verify button */
+}
